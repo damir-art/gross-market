@@ -1,0 +1,83 @@
+/* SECTION--VACANCY */
+.section--vacancy {
+    margin-bottom: 80px;
+}
+.section--vacancy__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.vacancy-head {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: lowercase;
+}
+.vacancy__btn-wrap {
+    display: flex;
+    align-items: center;
+}
+.vacancy__btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #FFF;
+    cursor: pointer;
+}
+.vacancy__btn--left {
+    margin-right: 40px;
+}
+
+/* vacancy */
+.vacancy {
+    display: flex;
+    justify-content: space-between;
+}
+.vacancy__item {
+    position: relative;
+    width: 350px;
+    height: 480px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.vacancy__name {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: lowercase;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 30px;
+}
+.vacancy__txt {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+}
+
+.vacancy__item:hover {
+    background-color: #FFDF31;
+    background-image: none;
+    cursor: pointer;
+}
+.vacancy__item:hover .vacancy__txt {
+    display: block;
+}
+
+.vacancy__item--tovaroved {
+    background-image: url('../img/tovaroved.png');
+}
+.vacancy__item--voditel {
+    background-image: url('../img/voditel.png');
+}
+.vacancy__item--pekar {
+    background-image: url('../img/pekar.png');
+}

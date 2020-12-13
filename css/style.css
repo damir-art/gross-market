@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url('normalize.css');
+@import url('../fonts/euclid-circular-b/stylesheet.css');
+@import url('common-styles.css');
+@import url('section-navbar.css');
+@import url('section-banner.css');
+@import url('section-vacancy.css');
+@import url('section-instagram.css');
+
+/* SECTION--MAP */
+.section--map {
+    margin-bottom: 80px;
+}
+.section--map__head {
+    margin-bottom: 32px;
+}
+.map-head {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: lowercase;
+}
+
+/* SECTION NAVBAR FOOTER */
+.section--footer {
+    background-color: #F5F5F5;
+    padding-top: 80px;
+}
+.section__row--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-radius: 8px;
+    padding: 0 24px;
+    background-color: #FFF;
+}
+.section__col--footer {
+    flex: 0 1 540px;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social__share {
+    font-size: 32px;
+    text-transform: lowercase;
+}
+/*
+добавить :link :visited :focus :hover :active
+Работаем с ::after и ::before
+.li {
+    position: relative;
+    padding-left: 15px;
+}
+.li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 0;
+}
+
+.background {
+    background-color:     #f4faff;           задаём цвет для фона
+    background-image:     url('../img/head-screen.png');  задаем фоновое изображение
+    background-repeat:    no-repeat;      задаем повтор для изображения
+    background-position:  right center;         задаем позицию изображения можно задавать 2 значения "вертикаль горизонталь" или в пикселях
+    background-size:      contain;          задаём размер изображения
+        cover   - подстраивается по высоте и ширине одновременно
+        auto    - вставляется внурь контейнера как есть не подстраивается,
+        contain - подстраивается по высоте,
+        проценты, (относительно контейнера),
+        пиксели, (можно задавать 2 значения)
+    background-attachment: fixed;         задаём фиксацию фона, скрол не влияет при этом background-position становится относительно окна браузера
+}
+*/
