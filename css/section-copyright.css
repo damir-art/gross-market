@@ -1,0 +1,22 @@
+/* SECTION COPYRIGHT */
+.section--copyright {
+    background-color: #F5F5F5;
+}
+.section__row--copyright {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+.section__col--copyright {
+    flex: 0 1 555px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.copy {
+    font-size: 14px;
+    font-weight: medium;
+}
+.policy {
+    font-size: 14px;
+    font-weight: medium;
+}
