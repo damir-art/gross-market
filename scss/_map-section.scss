@@ -1,0 +1,16 @@
+/* map */
+.map {
+    margin-bottom: 72px;
+}
+.map__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.map__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: lowercase;
+}

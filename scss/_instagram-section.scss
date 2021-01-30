@@ -1,0 +1,58 @@
+/* instagram */
+.instagram {
+    margin-bottom: 72px;
+}
+.instagram__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.instagram__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: lowercase;
+}
+
+/* список фотографий */
+.instagram__wrap {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.instagram__open {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.instagram__open:target {
+    display: grid;
+}
+
+.instagram__img {
+    display: block;
+    border-radius: 8px;
+}
+
+.instagram__item--big {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.button--gray {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: var(--gray);
+}
+
+.button--gray:hover {
+    background-color: var(--gray-dark);
+}

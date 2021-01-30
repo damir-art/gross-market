@@ -1,0 +1,81 @@
+/* modal */
+.modal--none {
+    display: none;
+}
+.modal--block {
+    display: block;
+}
+
+.modal__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+.modal__wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    max-width: 1110px;
+    overflow: auto;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    background-color: var(--white);
+    padding-top: 72px;
+    padding-right: 95px;
+    padding-bottom: 72px;
+    padding-left: 95px;
+    border-radius: 8px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border: 0;
+}
+.modal__close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('../design/close.png');
+    cursor: pointer;
+}
+
+.modal__data h1 {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.modal__data h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.modal__data p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.modal__data p:last-child {
+    margin-bottom: 72px;
+}
+
+.gray-dark {
+    color: var(--gray-dark);
+}

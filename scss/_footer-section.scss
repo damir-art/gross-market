@@ -1,0 +1,31 @@
+/* footer */
+footer {
+    background-color: var(--gray);
+    padding-top: 72px;
+}
+nav {
+    display: flex;
+    min-height: 89px;
+    background-color: var(--white);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.social-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 24px;
+}
+.share {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+.social {
+    display: flex;
+}
+.social__item--facebook {
+    margin-right: 8px;
+}

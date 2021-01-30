@@ -8,159 +8,180 @@
     <meta name="keywords" content="Гросс Маркет" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="fonts/euclid-circular-b/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
 </head>
-<body>
+<body class="wrapper">
 
 <header>
-    <section class="section section--navbar">
+    <section class="section navbar-section">
         <div class="section__container">
             <div class="section__row section__row--navbar">
                 <div class="section__col section__col--navbar">
-                    <div class="logo">
-                        <img class="logo__img" src="design/logo.png" width="21px" height="30px" alt="Логотип компании Гросс Маркет" />
+                    <div class="logo logo--navbar">
+                        <img class="logo__img" src="design/logo.png" width="21" height="30" alt="Логотип компании Гросс Маркет" />
                         <div class="logo__txt">Гросс Маркет</div>
                     </div>
                 </div> <!-- .section__col -->
                 <div class="section__col section__col--navbar">
                     <div class="call">
                         <div class="phone">+7 (926) 433-14-16</div>
-                        <a href="#" class="link-btn">Заполнить анкету</a>
+                        <button class="button">Заполнить анкету</button>
                     </div>
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--navbar -->
+    </section> <!-- .navbar-section -->
 
-    <section class="section section--banner">
+    <section class="section slider-section">
         <div class="section__container">
             <div class="section__row">
                 <div class="section__col">
-                    <div class="banner">
-                        <div class="banner__h1">У тебя<br /> к этому талант</div>
-                        <img class="banner__img" src="design/banner.png" width="1110px" height="400px" alt="Баннер компании Гросс Маркет" />
-                        <div class="banner__btn-wrap clearfix">
-                            <button class="banner__btn banner__btn--left"><img class="banner__arrow banner__arrow--left" src="design/banner-arrow-left-gray.png" width="10px" height="10px" alt="" /></button>
-                            <button class="banner__btn banner__btn--right"><img class="banner__arrow banner__arrow--rigth" src="design/banner-arrow-right.png" width="10px" height="10px" alt="" /></button>
-                            <img class="banner__btn-line" src="design/banner-btn-line.png" width="1px" height="28px" alt="Баннер компании Гросс Маркет" />
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slider-item ">
+                                <div class="banner__title">У тебя<br /> к этому<br /> талант</div>
+                                <img class="banner__img" src="design/banner.png" width="1110" height="400" alt="Баннер компании Гросс Маркет" />
+                            </div>
+                            <div class="slider-item">
+                                <div class="banner__title">У тебя<br /> всё под<br /> контролем</div>
+                                <img class="banner__img" src="design/banner-2.png" width="1110" height="400" alt="Баннер компании Гросс Маркет" />
+                            </div>
+                        </div> <!-- slider-track -->
+                        <div class="btn">
+                            <button class="btn__item btn-prev"></button>
+                            <button class="btn__item btn-next"></button>
                         </div>
-                    </div>
+                    </div> <!-- slider-container -->
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--banner -->
+    </section> <!-- .slider-section -->
 </header>
 
 <main>
-    <section class="section section--vacancy">
+    <section class="section vacancy-section">
         <div class="section__container">
             <div class="section__row">
                 <div class="section__col">
-                    <div class="section--vacancy__head">
-                        <div class="vacancy-head">Вакансии в Гросс Маркете</div>
-                        <div class="vacancy__btn-wrap">
-                            <button class="vacancy__btn vacancy__btn--left"><img class="vacancy__arrow vacancy__arrow--left" src="design/banner-arrow-left.png" width="10px" height="10px" alt="" /></button>
-                            <button class="vacancy__btn vacancy__btn--right"><img class="vacancy__arrow vacancy__arrow--rigth" src="design/banner-arrow-right.png" width="10px" height="10px" alt="" /></button>
+                    <div class="vacancy__head">
+                        <div class="vacancy__title">Вакансии в Гросс Маркете</div>
+                        <div class="btn btn--vacancy">
+                            <button class="btn__item btn-prev-vac"></button>
+                            <button class="btn__item btn-next-vac"></button>
                         </div>
                     </div>
-                    <div class="vacancy">
-                        <div class="vacancy__item vacancy__item--tovaroved">
-                            <div class="vacancy__name">Товаровед</div>
-                            <div class="vacancy__txt">Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе</div>
-                        </div>
-                        <div class="vacancy__item vacancy__item--voditel">
-                            <div class="vacancy__name">Водитель</div>
-                            <div class="vacancy__txt">Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе</div>
-                        </div>
-                        <div class="vacancy__item vacancy__item--pekar">
-                            <div class="vacancy__name">Пекарь</div>
-                            <div class="vacancy__txt">Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе</div>
-                        </div>
-                    </div>
+                    <div class="vacancy-container">
+                        <div class="vacancy-track">
+                            <div class="vacancy__item vacancy__item--tovaroved">
+                                <div class="vacancy__name">Товаровед</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                            <div class="vacancy__item vacancy__item--voditel">
+                                <div class="vacancy__name">Водитель</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                            <div class="vacancy__item vacancy__item--pekar">
+                                <div class="vacancy__name">Пекарь</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                            <div class="vacancy__item vacancy__item--kassir">
+                                <div class="vacancy__name">Кассир</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                            <div class="vacancy__item vacancy__item--prodavec">
+                                <div class="vacancy__name">Продавец</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                            <div class="vacancy__item vacancy__item--povar">
+                                <div class="vacancy__name">Повар</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                            <div class="vacancy__item vacancy__item--priemschik">
+                                <div class="vacancy__name">Приёмщик</div>
+                                <div class="vacancy__txt">Доставка товара по магазинам<br /> и гипермаркетам компании в обслуживаемом регионе</div>
+                            </div>
+                        </div> <!-- .vacancy-track -->
+                    </div> <!-- .vacancy-container -->
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--vacancy -->
+    </section> <!-- .vacancy -->
 
-    <section class="section section--instagram">
+    <section class="section instagram">
         <div class="section__container">
             <div class="section__row section__row--instagram">
                 <div class="section__col">
-                    <div class="section--instagram__head">
-                        <div class="instagram-head">Мы в инстаграме</div>
+                    <div class="instagram__head">
+                        <div class="instagram__title">Мы в инстаграме</div>
                     </div>
 
-                    <div class="instagram">
-                        <div class="instagram__big">
-                            <img src="design/instagram-big.png" alt="" />
-                        </div>
-                        <div class="instagram__small">
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                        </div>
+                    <div class="instagram__wrap">
+                        <div class="instagram__item instagram__item--big"><img class="instagram__img" src="design/instagram.png" height="540" width="540" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
                     </div>
-
-                    <div class="section--instagram__footer">
-                        <div class="instagram-small-hidden">
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                            <img src="design/instagram-small.png" alt="" />
-                        </div>
+                    <div class="instagram__open" id="inst-open">
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                        <div class="instagram__item"><img class="instagram__img" src="design/instagram.png" height="255" width="255" alt="" /></div>
+                    </div>
                     
-                        <a href="#" class="link-btn btn--instagram">Показать еще</a>
-                    </div>
+                    <a href="#inst-open" class="button button--gray">Показать еще</a>
+                    
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--instagram -->
+    </section> <!-- .instagram -->
 
-    <section class="section section--map">
+    <section class="section map">
         <div class="section__container">
             <div class="section__row">
                 <div class="section__col">
-                    <div class="section--map__head">
-                        <div class="map-head">География</div>
+                    <div class="map__head">
+                        <div class="map__title">География</div>
                     </div>
-                    <div class="map">
+                    <div class="map__script">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae49ea11438000e2d0b226fb80122dcffee9d983b9423b1f5510ae11a5016a5dd&amp;width=100%25&amp;height=540&amp;lang=ru_RU&amp;scroll=false"></script>
                     </div>
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--map -->
+    </section> <!-- .map -->
 </main>
 
 <footer>
-    <section class="section section--footer">
+    <section class="section footer">
         <div class="section__container">
             <div class="section__row section__row--footer">
                 <div class="section__col section__col--footer">
-                    <div class="logo">
-                        <img class="logo__img" src="design/logo.png" alt="Логотип компании Гросс Маркет" />
-                        <div class="logo__txt">Гросс Маркет</div>
-                    </div>
-                </div> <!-- .section__col -->
-                <div class="section__col section__col--footer">
-                    <div class="social">
-                        <div class="social__share">Поделиться</div>
-                        <div class="social__ico">
-                            <img class="social__ico-item social__ico-facebook" src="design/facebook.png" width="24px" height="24px" alt="Иконка Фейсбук" />
-                            <img class="social__ico-item" src="design/vk.png" width="24px" height="24px" alt="Иконка ВК" />
-                        </div>
-                    </div>
+                    <nav>
+                        <div class="logo logo--footer">
+                            <img class="logo__img" src="design/logo.png" width="21" height="30" alt="Логотип компании Гросс Маркет" />
+                            <div class="logo__txt">Гросс Маркет</div>
+                        </div> <!-- .logo -->
+                        <div class="social-wrap">
+                            <div class="share">Поделиться</div>
+                            <div class="social">
+                                <img class="social__item social__item--facebook" src="design/facebook.png" width="24" height="24" alt="Иконка Фейсбук" />
+                                <img class="social__item" src="design/vk.png" width="24" height="24" alt="Иконка ВК" />
+                            </div>
+                        </div> <!-- .social-wrap -->
+                    </nav>
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--footer -->
+    </section> <!-- .footer -->
 
-    <section class="section section--copyright">
+    <section class="section copyright">
         <div class="section__container">
             <div class="section__row section__row--copyright">
                 <div class="section__col section__col--copyright">
@@ -170,13 +191,45 @@
                 </div> <!-- .section__col -->
                 <div class="section__col section__col--copyright">
                     <div class="policy">
-                        Политика обработки персональных данных
+                        <a class="lnk-data" href="#">Политика обработки персональных данных</a><br />
                     </div>
                 </div> <!-- .section__col -->
             </div> <!-- .section__row -->
         </div> <!-- .section__container -->
-    </section> <!-- .section--copyright -->
+    </section> <!-- .copyright -->
 </footer>
 
+<div class="modal modal--none">
+    <div class="modal__overlay">
+        <div class="modal__wrap">
+            <button class="modal__close" type="button" aria-label="Закрыть"></button>
+            <h1>Обработка данных</h1>
+            <h2>1. Что регулирует настоящая политика конфиденциальности</h2>
+            <p>
+                Настоящая политика конфиденциальности (далее — Политика) действует в отношении всей информации, включая персональные данные в понимании применимого законодательства (далее — «Персональная информация»), которую ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут получитьо Вас в процессе использования Вами любых сайтов, программ, продуктов и/или сервисов Гросс маркет (далее вместе  «Сервисы»), информацию о которых Гросс маркет может также получать Персональную информацию от своих партнеров (далее — «Партнеры»), сайты, программы, продукты или сервисы которых Вы используете (например, от рекламодателей Гросс маркет или службами такси). В таких случаях передача Персональной информации возможна только в случаях, установленных применимым законодательством, и осуществляется на основании специальных договоров между Гросс маркет и каждым из Партнеров.
+            </p>
+            <p class="gray-dark">
+                Пожалуйста, обратите внимание, что использование любого из Сайтов и/или Сервисов может регулироваться дополнительными условиями, которые могут вносить в настоящую Политику изменения и/или дополнения, и/или иметь специальные условия в отношении персональной информации, размещенные в соответствующих разделах документов для таких Сайтов /или Сервисов.
+            </p>
+            <h2>2. Кто обрабатывает информацию</h2>
+            <p>
+                Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.
+            </p>
+            <h2>3. Какова цель данной Политики</h2>
+            <p>
+                Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов Гросс маркет защищает и обрабатывает Вашу Персональную информацию в строгом соответствии с применимым законодательством.
+            </p>
+            <h2>4. Какую Персональную информацию о Вас собирает Гросс маркет</h2>
+            <p>
+                Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.
+            </p>
+        </div> <!-- modal__data -->
+    </div> <!-- modal__overlay -->
+</div> <!-- modal -->
+
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slider-vacancy.js"></script>
+    <!-- <script src="js/instagram.js"></script> -->
 </body>
 </html>

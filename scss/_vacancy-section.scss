@@ -1,0 +1,119 @@
+/* vacancy */
+.vacancy-section {
+    margin-bottom: 72px;
+}
+
+.vacancy__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.vacancy__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: lowercase;
+}
+
+/* кнопки двойные вакансия */
+.btn--vacancy {
+    position: relative;
+    bottom: 0;
+}
+.btn-prev-vac {
+    background-image: url('../design/banner-arrow-left.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn-next-vac {
+    background-image: url('../design/banner-arrow-right.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn-prev-vac:disabled {
+    background-image: url('../design/banner-arrow-left-gray.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn-next-vac:disabled {
+    background-image: url('../design/banner-arrow-right-gray.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* slider vacancy */
+.vacancy-container {
+    position: relative;
+    overflow: hidden;
+}
+.vacancy-track {
+    display: flex;
+    transition: 0.8s;
+}
+.vacancy__item {
+    position: relative;
+    width: 350px;
+    height: 480px;
+    border-radius: 8px;
+    background-color: var(--gray);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.vacancy__name {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: lowercase;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 30px;
+}
+
+.vacancy__txt {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+}
+
+.vacancy__item:hover {
+    background-color: var(--yellow);
+    background-image: none;
+    cursor: pointer;
+}
+
+.vacancy__item:hover .vacancy__txt {
+    display: block;
+}
+
+.vacancy__item--tovaroved {
+    background-image: url('../img/tovaroved.png');
+}
+.vacancy__item--voditel {
+    background-image: url('../img/voditel.png');
+}
+.vacancy__item--pekar {
+    background-image: url('../img/pekar.png');
+}
+.vacancy__item--kassir {
+    background-image: url('../img/kassir.png');
+}
+.vacancy__item--prodavec {
+    background-image: url('../img/prodavec.png');
+}
+.vacancy__item--povar {
+    background-image: url('../img/povar.png');
+}
+.vacancy__item--priemschik {
+    background-image: url('../img/priemschik.png');
+}

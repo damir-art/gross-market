@@ -1,0 +1,17 @@
+/* copyright */
+.section__row--copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section__col--copyright {
+    width: 50%;
+}
+
+.lnk-data {
+    color: var(--black);
+    text-decoration: none;
+}
